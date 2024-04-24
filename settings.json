@@ -1,7 +1,8 @@
 {
-    "workbench.colorTheme": "Material Dark Soda",
+    "workbench.colorTheme": "Default Dark+",
     "editor.fontSize": 16,
-    "editor.fontFamily": "Fira Code, Roboto Mono, Menlo, JetBrains Mono",
+    "editor.fontFamily": "Menlo, Fira Code",
+    "editor.fontWeight": "300",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 16,
@@ -16,6 +17,9 @@
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "editor.linkedEditing": true,
     "editor.guides.indentation": false,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
     "workbench.colorCustomizations": {
         "terminal.background": "#1D1F27",
         // Editor Colors
@@ -27,10 +31,15 @@
         "editor.selectionBackground": "#3e4451",
         "editor.selectionForeground": "#abb2bf",
         "editor.lineHighlightBackground": "#3e4451",
+        "editorGutter.background": "#1D1F27",
+        "editorGroupHeader.tabsBackground": "#1D1F27",
+        "editorGroupHeader.tabsBorder": "#1D1F27",
+        "editorGroupHeader.border": "#1D1F27",
         // Sidebar Colors
         "sideBar.background": "#1D1F27",
         "sideBar.foreground": "#fff",
         "sideBar.border": "#1D1F27",
+        "sideBarSectionHeader.border": "#1D1F27",
         "sideBarTitle.foreground": "#abb2bf",
         "sideBarSectionHeader.background": "#1D1F27",
         // Status Bar Colors
@@ -39,13 +48,13 @@
         // Activity Bar Colors
         "activityBar.background": "#1D1F27",
         "activityBar.foreground": "#fff",
+        "sideBarActivityBarTop.border": "#1D1F27",
         "activityBarBadge.background": "#1D1F27",
         // Panel Colors
         "panel.background": "#1D1F27",
         "panel.foreground": "#abb2bf",
         "panel.border": "#1D1F27",
         // Tabs Colors
-        "editorGroupHeader.tabsBackground": "#1D1F27",
         "tab.activeBackground": "#1D1F27",
         "tab.activeForeground": "#fff",
         "tab.inactiveBackground": "#21252b",
@@ -72,7 +81,11 @@
         "titleBar.activeForeground": "#abb2bf", // Text color in the active window's title bar
         "titleBar.inactiveBackground": "#282c34", // Background color of inactive windows' title bars
         "titleBar.inactiveForeground": "#5c6370", // Text color in inactive windows' title bars
-        "titleBar.border": "#282c34", // Border color of the title bar,
+        "titleBar.border": "#1D1F27", // Border color of the title bar,
+        "activityBar.border": "#1D1F27",
+        "statusBar.border": "#1D1F27",
+        "window.border": "#1D1F27",
+        "breadcrumb.background": "#1D1F27"
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -116,6 +129,17 @@
                 }
             },
             {
+                "scope": [
+                    "punctuation.definition.tag.begin.html",
+                    "punctuation.definition.tag.end.html",
+                    "punctuation.definition.tag",
+                ],
+                "settings": {
+                    // "foreground": "#FFF",
+                    // "fontStyle": "bold"
+                }
+            },
+            {
                 "scope": "variable.parameter",
                 "settings": {
                     "fontStyle": ""
@@ -131,31 +155,79 @@
                 "scope": "keyword",
                 "settings": {
                     "fontStyle": "",
-                    "foreground": "#FE646C"
+                    "foreground": "#FF757F"
                 }
             },
             {
                 "scope": "entity.name.tag",
                 "settings": {
                     "fontStyle": "",
-                    "foreground": "#FE646C"
+                    "foreground": "#FF757F"
                 }
             },
             {
                 "scope": "storage",
                 "settings": {
-                    "foreground": "#FE646C",
+                    "foreground": "#FF757F",
                     "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "punctuation.definition.string"
+                ],
+                "settings": {
+                    "foreground": "#FCF39B",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.modifier",
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.block variable.other",
+                "settings": {
+                    // "foreground": "#FFF",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "source",
+                "settings": {
+                    // "foreground": "#fff",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "variable.language",
+                    "variable"
+                ],
+                "settings": {
+                    // "foreground": "#FFF",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "keyword.other.unit",
+                "settings": {
+                    "foreground": "#EF8DAE",
+                    // "fontStyle": "bold"
                 }
             }
         ]
     },
     "code-runner.executorMap": {
-        "javascript": "clear && node",
+        "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $fileNameWithoutExt",
         "zig": "zig run",
-        "cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $dir/output/$fileNameWithoutExt && $dir/output/$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
