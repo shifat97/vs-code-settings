@@ -1,5 +1,4 @@
 {
-  "editor.fontFamily": "Andale Mono",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
@@ -10,7 +9,6 @@
   "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
-  "terminal.integrated.fontFamily": "Andale Mono",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "breadcrumbs.enabled": false,
@@ -33,9 +31,22 @@
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#FFC94A",
     "editorGroupHeader.tabsBackground": "#0F0F17",
+    "tab.activeForeground": "#5CD59A"
   },
   "workbench.colorTheme": "Dark Magic",
   "workbench.activityBar.location": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "moxer-icons",
   "workbench.statusBar.visible": false,
+  // Change font
+  "editor.fontFamily": "Andale Mono",
+  "terminal.integrated.fontFamily": "Andale Mono",
+  "scm.inputFontFamily": "Geist Mono",
+  "chat.editor.fontFamily": "Geist Mono",
+  "debug.console.fontFamily": "Geist Mono",
+  "editor.codeLensFontFamily": "Geist Mono",
+  "notebook.output.fontFamily": "Geist Mono",
+  "markdown.preview.fontFamily": "Geist Mono",
+  "editor.inlayHints.fontFamily": "Geist Mono",
+  "apc.font.family": "Geist Mono",
+  "apc.monospace.font.family": "Geist Mono",
 }
