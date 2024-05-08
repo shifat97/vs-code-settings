@@ -1,11 +1,13 @@
 {
   "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
   "editor.wordWrap": "on",
   "editor.linkedEditing": true,
+  "editor.scrollbar.vertical": "hidden",
   "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
@@ -20,7 +22,8 @@
           "comment",
           "comment.line.double-slash",
           "entity.other.attribute-name.js",
-          "variable.parameter"
+          "variable.parameter",
+          "meta.parameters"
         ],
         "settings": {
           "fontStyle": ""
@@ -30,13 +33,17 @@
   },
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#FFC94A",
-    "editorGroupHeader.tabsBackground": "#0F0F17",
-    "tab.activeForeground": "#5CD59A"
+    // "editorGroupHeader.tabsBackground": "#0F0F17",
+    "tab.activeForeground": "#61FFCA",
+    "tab.activeBorderTop": "#61FFCA",
   },
-  "workbench.colorTheme": "Dark Magic",
+  "workbench.colorTheme": "Aura Dark",
   "workbench.activityBar.location": "hidden",
   "workbench.iconTheme": "moxer-icons",
   "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native",
   // Change font
   "editor.fontFamily": "Andale Mono",
   "terminal.integrated.fontFamily": "Andale Mono",
@@ -49,4 +56,10 @@
   "editor.inlayHints.fontFamily": "Geist Mono",
   "apc.font.family": "Geist Mono",
   "apc.monospace.font.family": "Geist Mono",
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.stylesheet": {
+    ".pane-body": "padding: 0 8px",
+  },
 }
