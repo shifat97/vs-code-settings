@@ -2,15 +2,17 @@
   "editor.fontSize": 16,
   "editor.lineHeight": 1.8,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
   "editor.wordWrap": "on",
   "editor.linkedEditing": true,
   "editor.scrollbar.vertical": "hidden",
-  "editor.minimap.enabled": false,
   "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
   "editor.tabSize": 2,
+  "editor.stickyScroll.enabled": false,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "breadcrumbs.enabled": false,
@@ -28,25 +30,31 @@
         "settings": {
           "fontStyle": ""
         }
-      }
+      },
     ]
   },
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#FFC94A",
-    // "editorGroupHeader.tabsBackground": "#0F0F17",
-    "tab.activeForeground": "#61FFCA",
-    "tab.activeBorderTop": "#61FFCA",
+    "editor.background": "#1D212A",
+    "terminal.background": "#1D212A",
+    "sideBar.background": "#1D212A",
+    "sideBar.border": "#1A1C24",
+    "panel.background": "#1D212A",
+    "panel.border": "#1A1C24",
+    "editorGutter.background": "#1D212A",
+    "editorGroupHeader.tabsBackground": "#1D212A",
+    "editorGroupHeader.border": "#1A1C24",
+    "tab.inactiveBackground": "#1D212A",
+    "tab.border": "#1A1C24"
   },
-  "workbench.colorTheme": "Aura Dark",
   "workbench.activityBar.location": "hidden",
-  "workbench.iconTheme": "moxer-icons",
   "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
   "window.titleBarStyle": "native",
   // Change font
   "editor.fontFamily": "Andale Mono",
-  "terminal.integrated.fontFamily": "Andale Mono",
+  "terminal.integrated.fontFamily": "Menlo",
   "scm.inputFontFamily": "Geist Mono",
   "chat.editor.fontFamily": "Geist Mono",
   "debug.console.fontFamily": "Geist Mono",
@@ -62,4 +70,8 @@
   "apc.stylesheet": {
     ".pane-body": "padding: 0 8px",
   },
+  "workbench.colorTheme": "Nord Aurora Darker"
 }
+// "editor.background": "#1E1E1E",
+// "terminal.background": "#1E1E1E",
+// "panel.background": "#1E1E1E"
