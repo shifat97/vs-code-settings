@@ -1,77 +1,34 @@
 {
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   "editor.fontSize": 16,
-  "editor.lineHeight": 1.8,
+  "editor.smoothScrolling": true,
+  "editor.parameterHints.enabled": false,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-  "editor.wordWrap": "on",
-  "editor.linkedEditing": true,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.detectIndentation": false,
-  "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
-  "editor.stickyScroll.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Workbench
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Cobalt2",
+  "breadcrumbs.enabled": false,
+  // Terminal
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "breadcrumbs.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "comment.line.double-slash",
-          "entity.other.attribute-name.js",
-          "variable.parameter",
-          "meta.parameters"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-    ]
+  // Extension
+  "extensions.ignoreRecommendations": true,
+  // CPP
+  "[cpp]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.suggest.insertMode": "replace"
   },
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#FFC94A",
-    "editor.background": "#1D212A",
-    "terminal.background": "#1D212A",
-    "sideBar.background": "#1D212A",
-    "sideBar.border": "#1A1C24",
-    "panel.background": "#1D212A",
-    "panel.border": "#1A1C24",
-    "editorGutter.background": "#1D212A",
-    "editorGroupHeader.tabsBackground": "#1D212A",
-    "editorGroupHeader.border": "#1A1C24",
-    "tab.inactiveBackground": "#1D212A",
-    "tab.border": "#1A1C24"
-  },
-  "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
-  "window.titleBarStyle": "native",
-  // Change font
-  "editor.fontFamily": "Andale Mono",
-  "terminal.integrated.fontFamily": "Menlo",
-  "scm.inputFontFamily": "Geist Mono",
-  "chat.editor.fontFamily": "Geist Mono",
-  "debug.console.fontFamily": "Geist Mono",
-  "editor.codeLensFontFamily": "Geist Mono",
-  "notebook.output.fontFamily": "Geist Mono",
-  "markdown.preview.fontFamily": "Geist Mono",
-  "editor.inlayHints.fontFamily": "Geist Mono",
-  "apc.font.family": "Geist Mono",
-  "apc.monospace.font.family": "Geist Mono",
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.stylesheet": {
-    ".pane-body": "padding: 0 8px",
-  },
-  "workbench.colorTheme": "Nord Aurora Darker"
+  // code runner
+  "code-runner.runInTerminal": true
 }
-// "editor.background": "#1E1E1E",
-// "terminal.background": "#1E1E1E",
-// "panel.background": "#1E1E1E"
